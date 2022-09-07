@@ -1,30 +1,20 @@
-// Installera dependencies
+
 const prompt = require('prompt-sync')()
-console.debug(process)
-// Deklarera variabler
-const name = prompt("Who am I? ")
-let age = prompt("How old am I? ")
-console.log("Hello world, my name is " + name + ".")
-console.log(`I'm ${age} years old.`)
+console.log("hello world")
+let question = prompt("Knock knock? ").trim().toLowerCase()
+if (question === "whos there" || question === "who's there" || question === "who is there" || question === "who's there?" || question === "who is there?" || question === "whos there?") {
+    let answer = prompt("Tank! ").trim().toLowerCase()
+    if (answer === "Tank who?" || answer === "tank who?" || answer === "tank who" || answer === "Tank who") {
+        console.log("You're welcome!")
+    }
 
-/*
-if(prompt("Is it my birthday (y/n)?") == "y") {
-    console.log(`Hurray, now I'm ${age += 1}!`)
-} else {
-    console.log("ok")
+ else { console.log("Please play with me!")}
 }
-    
-*/
 
-// console.log(
-//     `
-//        ^       ^      ///
-//      ( * )   ( * )   //
-//           (||)      /
-//     (~____________~)
-//         \______/
-//     `
-// )
+else { console.log("Please play with me!")}
+
+
+
 
 // console.log(process.argv)
 
