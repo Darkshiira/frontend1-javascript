@@ -32,9 +32,9 @@ let candidateFemale = [
     height: 167,
     interests: "rugby"},
 
-    {name: "Lena",
-    age: 28,
-    height: 175,
+    {name: "Hanna",
+    age: 34,
+    height: 166,
     interests: "games"},
 
     {name: "Maja",
@@ -191,7 +191,7 @@ let datingsite = true;
          
 
 //Here you choose the sex of the candidate you want to date
-            let genderChoice = (prompt("Do you want to date female or male?  Write exit to exit"))
+            let genderChoice = (prompt("Do you want to date female or male?  Write exit to exit "))
 
 // ------------------------------------------------------ Male ------------------------------------------------------
             
@@ -199,12 +199,12 @@ let datingsite = true;
                 {
 // Here it goes back to chooosing what you want to find:
 
-                switch (prompt("Scroll through whats important for you: age, height or interests?"))
+                switch (prompt("Scroll through whats important for you: age, height or interests? "))
 
     // ------------------------------------------------------ Age ------------------------------------------------------ 
                 {
                     case "age":
-                        let ageQuestion = prompt("What age are you looking for? Use a decade for age(ex. 20, 30, 40")
+                        let ageQuestion = prompt("What age are you looking for? Use a decade for age(ex. 20, 30, 40 ")
                         //Function to compare the age
                         function roundUpNearest10(num) {
                         return Math.round(num / 10) * 10;
@@ -223,7 +223,7 @@ let datingsite = true;
         
 // ------------------------------------------------------ Height ------------------------------------------------------
                     case "height":
-                        let heightQuestion = prompt("What height are you looking for? write in CM (ex. 160, 180, 170)")
+                        let heightQuestion = prompt("What height are you looking for? write in CM (ex. 160, 180, 170) ")
                         let heightQuestionRounded = roundUpNearest10(heightQuestion)
                             for (let i = 0; i < candidate.length; i++) {
                                  if (roundUpNearest10(candidate[i].height) === heightQuestionRounded) {
@@ -260,12 +260,12 @@ let datingsite = true;
 //----------------------------------------------------Female--------------------------------------------------------------
             else if (genderChoice === "female")
                 {
-                    switch (prompt("Scroll through whats important for you: age, height or interests?"))
+                    switch (prompt("Scroll through whats important for you: age, height or interests?" ))
                     {
 
             // ---------------------------- Age-------------------------------------------------------
                          case "age":
-                            let ageQuestion = prompt("What age are you looking for? Use a decade for age(ex. 20, 30, 40")
+                            let ageQuestion = prompt("What age are you looking for? Use a decade for age(ex. 20, 30, 40) ")
                                 function roundUpNearest10(num) {
                                 return Math.round(num / 10) * 10;
                                 }
@@ -277,20 +277,23 @@ let datingsite = true;
                                         console.log("This candidate might seem interesting to you!")
                                          continue;
                                         }
-                                    break;
+                                    
                                     }
+                                    break;
             
     // ---------------------------- Height-------------------------------------------------------
                          case "height":
-                             let heightQuestion = prompt("What height are you looking for? write in CM (ex. 160, 180, 170)")
+                             let heightQuestion = prompt("What height are you looking for? write in CM (ex. 160, 180, 170) ")
                             let heightQuestionRounded = roundUpNearest10(heightQuestion)
                                  for (let i = 0; i < candidateFemale.length; i++) {
                                      if (roundUpNearest10(candidateFemale[i].height) === heightQuestionRounded) {
                                         console.log(candidateFemale[i])
                                          console.log("This candidate might seem interesting to you!")
-                                        continue;}
-                                     break;
+                                        continue;
                                     }
+                                     
+                                    }
+                                    break;
     // ---------------------------- Interests-------------------------------------------------------
                         case "interests":
 
