@@ -1,4 +1,3 @@
-
 const prompt = require('prompt-sync')()
 // console.log("hello world")
 // let question = prompt("Knock knock? ").trim().toLowerCase()
@@ -12,60 +11,164 @@ const prompt = require('prompt-sync')()
 // }
 
 // else { console.log("Please play with me!")}
-let namesOfMale = ["Shaun", "John", "Mark", "Peter", "Steven", "Michael", "Robert", "William", "Richard", "Joseph", "Thomas", "James", "Charles", "Daniel", "Paul", "Donald", "George", "Kenneth", "Anthony", "Kevin", "Brian", "Edward", "Ronald", "Jason", "Jeffrey", "Gary", "Stephen", "Larry", "Jeff", "Frank", "Scott", "Raymond", "Gregory", "Samuel", "Benjamin", "Patrick", "Jack", "Dennis", "Jerry", "Alexander", "Tyler", "Aaron", "Jose", "Douglas", "Henry", "Peter", "Adam", "Zachary", "Nathan", "Walter", "Harold", "Kyle", "Carl", "Jeremy", "Ethan", "Arthur", "Gerald", "Roger", "Keith", "Jeremy", "Terry", "Joe", "Sean", "Willie", "Ralph", "Lawrence", "Billy", "Austin", "Bruce", "Christian", "Roy", "Bryan", "Eugene", "Louis", "Harry", "Fred", "Wayne", "Ethan", "Randy", "Louis", "Russell", "Bobby", "Victor", "Martin", "Ernest", "Phillip", "Todd", "Jesse", "Craig", "Alan", "Bryan", "Jeffery", "Clarence", "Jimmy", "Francis", "Bradley", "Gabriel", "Louis", "Jeremy", "Ralph", "Lawrence", "Dennis", "Eugene", "Randy", "Louis", "Russell", "Bobby", "Victor", "Martin", "Ernest", "Phillip", "Todd", "Jesse", "Craig", "Alan", "Bryan", "Jeffery", "Clarence", "Jimmy", "Francis", "Bradley", "Gabriel", "Louis", "Jeremy", "Ralph", "Lawrence", "Dennis", "Eugene", "Randy", "Louis", "Russell", "Bobby", "Victor", "Martin", "Ernest", "Phillip", "Todd", "Jesse", "Craig", "Alan", "Bryan", "Jeffery", "Clarence", "Jimmy", "Francis", "Bradley", "Gab"];
-let agesOfMale = [25, 34, 56, 78, 31, 28, 25, 31, 36, 19, 42, 45, 38, 36, 33, 27, 28];
-let namesOfFemale = ["Mary", "Linda", "Elizabeth", "Jennifer", "Maria", "Susan", "Lisa", "Karen", "Nancy", "Betty", "Helen", "Sandra", "Donna", "Carol", "Ruth", "Sharon", "Jennifer", "Maria", "Susan", "Margaret", "Lisa", "Karen", "Betty", "Helen", "Sandra", "Donna", "Carol", "Ruth", "Sharon", "Jennifer", "Maria", "Susan", "Margaret", "Lisa", "Karen", "Betty", "Helen", "Sandra", "Donna", "Carol", "Ruth", "Sharon", "Jennifer", "Maria", "Susan", "Lisa", "Karen", "Betty", "Helen", "Sandra", "Donna", "Carol", "Ruth", "Sharon", "Jennifer", "Maria", "Susan", "Margaret", "Lisa", "Karen", "Betty", "Helen", "Sandra", "Donna", "Carol", "Ruth", "Sharon", "Jennifer", "Maria", "Susan", "Margaret", "Lisa", "Karen", "Betty", "Helen", "Sandra", "Donna", "Carol", "Ruth", "Sharon", "Jennifer", "Maria", "Susan", "Margaret", "Lisa", "Karen", "Betty", "Helen", "Sandra", "Donna", "Carol", "Ruth", "Sharon", "Jennifer", "Maria", "Susan", "Margaret", "Lisa", "Karen", "Betty", "Helen", "Sandra", "Donna", "Carol", "Ruth", "Sharon", "Jennifer", "Maria", "Susan", "Margaret", "Lisa", "Karen", "Betty", "Helen", "Sandra", "Donna", "Carol", "Ruth", "Sharon", "Jennifer", "Maria", "Susan", "Margaret", "Lisa", "Karen", "Betty", "Helen", "Sandra", "Donna", "Carol", "Ruth", "Sharon", "Jennifer", "Maria", "Susan"];
-let agesOfFemale = [25, 34, 56, 78, 31, 28, 25, 31, 36, 19, 42, 45, 38, 36, 33, 27, 28];
-let heightOfMale = [150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200];
-let heightOfFemale = [150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200];
-let interestsOfMale = ["Football", "Dogs", "Nature", "Wine", "Beer", "Rugby", "Games", "Videogames", "Computer", "Programming", "Cats", "Walks", "Running", "Climbing", "Sports", "Movies", "Tennis", "Chess", "Boardgames"];
-let interestsOfFemale = ["Football", "Dogs", "Nature", "Wine", "Beer", "Rugby", "Games", "Videogames", "Computer", "Programming", "Cats", "Walks", "Running", "Climbing", "Sports", "Movies", "Tennis", "Chess", "Boardgames"];
 
-let candidate1 = "Name: " + namesOfMale[getRandomInt(namesOfMale.length)] + ", Age:  " + agesOfMale[getRandomInt(agesOfMale.length)] + ", Length: " + heightOfMale[getRandomInt(heightOfMale.length)]+ " and Interests: " + interestsOfMale[getRandomInt(interestsOfMale.length)]
-let candidate2 = "Name: " + namesOfMale[getRandomInt(namesOfMale.length)] + ", Age:  " + agesOfMale[getRandomInt(agesOfMale.length)] + ", Length: " + heightOfMale[getRandomInt(heightOfMale.length)]+ " and Interests: " + interestsOfMale[getRandomInt(interestsOfMale.length)]
-let candidate3 = "Name: " + namesOfMale[getRandomInt(namesOfMale.length)] + ", Age:  " + agesOfMale[getRandomInt(agesOfMale.length)] + ", Length: " + heightOfMale[getRandomInt(heightOfMale.length)]+ " and Interests: " + interestsOfMale[getRandomInt(interestsOfMale.length)]
-let candidate4 = "Name: " + namesOfMale[getRandomInt(namesOfMale.length)] + ", Age:  " + agesOfMale[getRandomInt(agesOfMale.length)] + ", Length: " + heightOfMale[getRandomInt(heightOfMale.length)]+ " and Interests: " + interestsOfMale[getRandomInt(interestsOfMale.length)]
-let candidate5 = "Name: " + namesOfMale[getRandomInt(namesOfMale.length)] + ", Age:  " + agesOfMale[getRandomInt(agesOfMale.length)] + ", Length: " + heightOfMale[getRandomInt(heightOfMale.length)]+ " and Interests: " + interestsOfMale[getRandomInt(interestsOfMale.length)]
 
-let candidateFem1 = "Name: " + namesOfFemale[getRandomInt(namesOfFemale.length)] + ", Age:  "  + agesOfFemale[getRandomInt(agesOfFemale.length)] + ", Length: " + heightOfFemale[getRandomInt(heightOfFemale.length)]+ " and Interests: "  + interestsOfFemale[getRandomInt(interestsOfFemale.length)]
-let candidateFem2 = "Name: " + namesOfFemale[getRandomInt(namesOfFemale.length)] + ", Age:  "  + agesOfFemale[getRandomInt(agesOfFemale.length)] + ", Length: " + heightOfFemale[getRandomInt(heightOfFemale.length)]+ " and Interests: "  + interestsOfFemale[getRandomInt(interestsOfFemale.length)]
-let candidateFem3 = "Name: " + namesOfFemale[getRandomInt(namesOfFemale.length)] + ", Age:  "  + agesOfFemale[getRandomInt(agesOfFemale.length)] + ", Length: " + heightOfFemale[getRandomInt(heightOfFemale.length)]+ " and Interests: "  + interestsOfFemale[getRandomInt(interestsOfFemale.length)]
-let candidateFem4 = "Name: " + namesOfFemale[getRandomInt(namesOfFemale.length)] + ", Age:  "  + agesOfFemale[getRandomInt(agesOfFemale.length)] + ", Length: " + heightOfFemale[getRandomInt(heightOfFemale.length)]+ " and Interests: "  + interestsOfFemale[getRandomInt(interestsOfFemale.length)]
-let candidateFem5 = "Name: " + namesOfFemale[getRandomInt(namesOfFemale.length)] + ", Age:  "  + agesOfFemale[getRandomInt(agesOfFemale.length)] + ", Length: " + heightOfFemale[getRandomInt(heightOfFemale.length)]+ " and Interests: "  + interestsOfFemale[getRandomInt(interestsOfFemale.length)]
-function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
-  }
 
-let datingSite = function(factor) {
-    if (factor == 1) {
-       switch (prompt("What's most important, age, height or interests?"))
-       {
-       case "age":
-        let ageQuestion = prompt("What age are you looking for?")
-       case "height":
+let candidate = [
+    {name: "Shaun",
+    age: 25,
+    height: 150,
+    interests: "dogs"}
+    ,
+    {name: "Johan",
+    age: 35,
+    height: 162,
+    interests: "cars"}
+    ,
+    {name: "Peter",
+    age: 22,
+    height: 178,
+    interests: "wine"}
+,
+    {name: "Mark",
+    age: 46,
+    height: 180,
+    interests: "nature"}
+,
+    {name: "Peter",
+    age: 36,
+    height: 163,
+    interests: "beer"}
+,
+    {name: "Steven",
+    age: 45,
+    height: 167,
+    interests: "rugby"}
+,
+ {name: "John",
+    age: 28,
+    height: 175,
+    interests: "games"},
+    
+{name: "Michael",
+age: 44,
+height: 180,
+interests: "videogames"},
 
-       case "interests":
+{name:"William",
+age: 33,
+height: 165, 
+interests:"computer"},
 
-       default:
-              console.log("Please enter a valid option")  }}
-    } else {
-       
+{name:"Robert",
+age: 28,
+height: 189,
+interests: "programming"},
+
+{name:"Joseph",
+age: 19,
+height: 179, 
+interests:"cats"},
+
+{name: "Thomas",
+age: 36,
+height: 180,
+intersts: "walks"},
+
+{name:"James",
+age: 38,
+height: 179,
+interests: "running"},
+
+{name: "Daniel",
+age: 30,
+height: 180, 
+interests: "climbing"},
+
+{name: "Charles",
+age: 29,
+height: 173,
+interests: "sports"},
+
+{name: "Daniel", 
+age: 27,
+height: 173,
+interests: "movies"},
+
+{name: "Donald",
+age: 65,
+height: 175,
+interests: "politics"},
+
+{name: "George",
+age: 21,
+height: 156,
+interests: "boardgames"}
+    ]
+
+    
+ const findInterests = function(searchFor, journal) {
+    for (let i = 0; i < journal.length; i++) {
+           if (journal[i].interests === searchFor) {
+               return console.log( journal[i]);
+}}
+}
+
+
+
+let yourName = prompt('What is your name? ')
+let yourAge = prompt('How old are you? ')
+let yourHeight = prompt('How tall are you? ')
+let yourInterests = prompt('What are your interests? ')
+
+    if (yourAge > 18)
+{ console.log(`Welcome to the datingsite ${yourName}`)
+
+switch (prompt("Do you want to date female or male?"))
+{case "male": 
+    switch (prompt("What's most important, age, height or interests?"))
+    {
+    case "age":
+     let ageQuestion = prompt("What age are you looking for? Use a decade for age(ex. 20, 30, 40")
+     function roundUpNearest10(num) {
+        return Math.round(num / 10) * 10;
+      }
+    let ageQuestionRounded = roundUpNearest10(ageQuestion)
+    for (let i = 0; i < candidate.length; i++) {
+        if (roundUpNearest10(candidate[i].age) === ageQuestionRounded) {
+            console.log(candidate[i])
+            
+            break;
+        }
+    }
         
+
+     case "height":
+     break;
+    case "interests":
+        console.log(findInterests(yourInterests, candidate));
+        console.log("Theese seem to be the best candidates for you!")
+
+     break;
+    default:
+           console.log("Please enter a valid option")  
+     break;
+    }
+
+case "female":
+     {
+        console.log("Write something")
+        break;
+     }
+     default: {
+        console.log("You have to choose!")
+        break;
+     }
     }
 }
-let name = prompt('What is your name? ')
-let age = prompt('How old are you? ')
-let height = prompt('How tall are you? ')
-let interests = prompt('What are your interests? ')
-
-    if (age < 18)
-        {console.log('You are not old enough to date')
+else {
+    console.log('You are not old enough to date')
 }
-else console.log(`Welcome to the datingsite ${name}`)
-
-let choice = prompt("Do you want to date female or male? Type '1' if Male")
-console.log(datingSite(choice))
-
 
 // console.log(process.argv)
 

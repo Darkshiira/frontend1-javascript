@@ -19,5 +19,12 @@
   "homepage": "https://github.com/rymdpeter/frontend1-javascript#readme",
   "devDependencies": {
     "prompt-sync": "^4.2.0"
-  }
+  },
+  "dependencies": {
+    "ansi-regex": "^4.1.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "strip-ansi": "^5.2.0"
+  },
+  "keywords": []
 }
