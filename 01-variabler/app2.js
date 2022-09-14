@@ -95,11 +95,16 @@ interests: "boardgames"}
         return Math.round(num / 10) * 10;
       }
 
-    let ageQuestion = prompt("What age are you looking for? Use a decade for age(ex. 20, 30, 40")
-    let ageQuestionRounded = roundUpNearest10(ageQuestion)
-    for (let i = 0; i < candidate.length; i++) {
-        if (roundUpNearest10(candidate[i].age) === ageQuestionRounded) {
-            console.log(candidate[i])
-        }
-    }
+      let heightQuestion = prompt("What height are you looking for? write in CM (ex. 160, 180, 170)")
+      let heightQuestionRounded = roundUpNearest10(heightQuestion)
+          for (let i = 0; i < candidate.length; i++) {
+               if (roundUpNearest10(candidate[i].height) === heightQuestionRounded) {
+                  console.log(candidate[i])
+                  console.log("This candidate might seem interesting to you!")
+                  continue;
+              }
+                     
+          }
+          
+    
  
